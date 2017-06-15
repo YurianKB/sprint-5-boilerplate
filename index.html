@@ -4,17 +4,49 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Foro Yu Moriré nocierto sicierto c:</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
-  <body>
 
-    <h1>Aqui van todos los temas</h1>
-    
+  <body>
+    <h1>Foro Popo</h1>
+    <th><span class="glyphicon glyphicon-search"></span></th>
+    <input type="text" data-toggle="modal" data-target="#modal" value="Buscar Tema">
+    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal">
+      Agregar Tema
+    </button>
+    <table class="table table-striped table-responsive">
+      <thead>
+        <th>Tema</th>
+        <th>Autor</th>
+        <th>Respuestas</th>
+      </thead>
+    </table>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <form id="add-form">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 id="modalTema">Nuevo tema</h4>
+              <div class="modal-body">
+                  <div class="form-group">
+                    <input type="text" class="form-control tituloTema" id="myInput" placeholder="" />
+                    <input type="text" class="form-control texto" placeholder="" />
+                  </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/main.js"></script>
-    
+
   </body>
 </html>
